@@ -13,6 +13,7 @@ targetCompatibility = "11"
 ext {
     mapStructVersion = "1.4.2.Final"
     jwtVersion = "0.11.5"
+    postgresql = '42.3.4'
 }
 
 configurations {
@@ -36,6 +37,7 @@ dependencies {
     runtimeOnly "io.jsonwebtoken:jjwt-impl:${jwtVersion}"
     runtimeOnly "io.jsonwebtoken:jjwt-orgjson:${jwtVersion}"
     runtimeOnly "mysql:mysql-connector-java"
+    runtimeOnly "org.postgresql:postgresql:${postgresql}"
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     annotationProcessor "org.projectlombok:lombok"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapStructVersion}"
