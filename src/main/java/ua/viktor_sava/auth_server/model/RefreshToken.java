@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "refresh_token")
 @Getter
 @Setter
 @NoArgsConstructor
