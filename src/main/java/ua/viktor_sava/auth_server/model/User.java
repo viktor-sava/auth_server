@@ -8,8 +8,7 @@ import javax.persistence.*;
 import java.util.Collection;
 import java.util.Set;
 
-@Entity
-@Table(name = "user")
+@Entity(name = "account")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -29,7 +28,7 @@ public class User implements UserDetails {
     private String password;
 
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
-    @JoinTable(name = "user_roles")
+    @JoinTable(name = "account_roles")
     private Set<Role> roles = Set.of();
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)

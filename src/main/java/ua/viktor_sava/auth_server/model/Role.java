@@ -6,7 +6,6 @@ import org.springframework.security.core.GrantedAuthority;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "role")
 @Getter
 @Setter
 @NoArgsConstructor

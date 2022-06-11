@@ -5,7 +5,6 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "refresh_token")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -14,12 +13,12 @@ import javax.persistence.*;
 public class RefreshToken {
 
     @Id
-    @Column(name = "user_id")
+    @Column(name = "account_id")
     private Long id;
 
     @OneToOne
     @MapsId
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "account_id")
     private User user;
 
     @Column(nullable = false, unique = true)
