@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Table(name = "role")
+@Table(name = "refresh_token")
 @Entity
 @Getter
 @Setter
