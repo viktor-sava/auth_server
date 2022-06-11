@@ -1,0 +1,1 @@
+web: java -jar build/lib/auth_server-0.0.1-SNAPSHOT.jar
