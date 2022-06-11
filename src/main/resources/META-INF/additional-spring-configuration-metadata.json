@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "application.refresh-token.secret",
+      "type": "java.lang.String",
+      "description": "Description for application.refresh-token.secret."
+    },
+    {
+      "name": "application.refresh-token.duration",
+      "type": "java.lang.Integer",
+      "description": "Description for application.refresh-token.duration."
+    },
+    {
+      "name": "application.access-token.secret",
+      "type": "java.lang.String",
+      "description": "Description for application.access-token.secret."
+    },
+    {
+      "name": "application.access-token.duration",
+      "type": "java.lang.Integer",
+      "description": "Description for application.access-token.duration."
+    }
+  ]
+}
