@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.util.Collection;
 import java.util.Set;
 
-@Table(name = "account")
+@Table(name = "user")
 @Entity
 @Getter
 @Setter
