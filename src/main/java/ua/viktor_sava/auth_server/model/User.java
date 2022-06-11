@@ -29,7 +29,7 @@ public class User implements UserDetails {
     private String password;
 
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
-    @JoinTable(name = "account_roles")
+    @JoinTable(name = "user_roles")
     private Set<Role> roles = Set.of();
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
